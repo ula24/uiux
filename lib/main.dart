@@ -14,44 +14,165 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
         home: Scaffold(
           body: SafeArea(
-            child:Container(
-              width: 400,
-              height: 400,
-              padding: EdgeInsets.all(40),
-              decoration: const BoxDecoration(
-                  color: Colors.red,
-                  borderRadius: BorderRadius.only(topLeft:Radius.circular(20),topRight: Radius.circular(0),bottomLeft: Radius.circular(0),bottomRight: Radius.circular(32))),
+            child:Expanded(
+              child: Column(
 
-              child: Container(
-                width: 150,
-                height: 150,
-                padding: EdgeInsets.all(40),
-                decoration: const BoxDecoration(
-                    color: Colors.black,
-                    borderRadius: BorderRadius.only(topLeft:Radius.circular(20),topRight: Radius.circular(0),bottomLeft: Radius.circular(0),bottomRight: Radius.circular(32))),
+                children: [
+                  Expanded(
+                    child: Row(
+                      children: [
+                        Expanded(
+                          flex: 1,
+                          child: Container(
+                            color: Colors.red,
+                          ),
+                        ),
+                        Expanded(
+                          flex: 1,
+                          child: Container(
+                            color: Colors.blue,
+                          ),
+                        ),
+                      ],
 
-                child: Container(
-                  width: 100,
-                  height: 100,
-                  padding: EdgeInsets.all(40),
-                  decoration: const BoxDecoration(
-                      color: Colors.blue,
-                      borderRadius: BorderRadius.only(topLeft:Radius.circular(20),topRight: Radius.circular(0),bottomLeft: Radius.circular(0),bottomRight: Radius.circular(32))),
 
-                  child: Container(
-                    width: 50,
-                    height: 50,
-                      decoration: const BoxDecoration(
-                          color: Colors.red,
-                          borderRadius: BorderRadius.only(topLeft:Radius.circular(20),topRight: Radius.circular(0),bottomLeft: Radius.circular(0),bottomRight: Radius.circular(32))),
-                    child:Center(child: Text('red')) ,
+
+                    ),
                   ),
-                ),
+                    Expanded(
+                      child: Row(
+                    children: [
+                      Expanded(
+                        flex: 1,
+                        child: Container(
+                          color: Colors.blue,
+                        ),
+                      ),
+                      Expanded(
+                        flex: 3,
+                        child: Container(
+                          color: Colors.red,
+                        ),
+                      ),
+                      Expanded(
+                        flex: 1,
+                        child: Container(
+                          color: Colors.blue,
+                        ),
+                      ),
+                    ],)
+
+                  ),
+                  Expanded(
+                    child: Row(
+                      children: [
+                        Expanded(
+                          flex:1 ,
+                          child: Container(
+                            color: Colors.red,
+                          ),
+                        ),
+                        Expanded(
+                          flex: 2,
+                          child: Container(
+                            color: Colors.white,
+                          ),
+                        ),
+                        Expanded(
+                          flex: 1,
+                          child: Container(
+                            color: Colors.blue,
+                          ),
+                        ),
+                      ],
+
+                    ),
+                  ),
+                  Expanded(
+                    child: Row(
+                      children: [
+                        Expanded(
+                          flex:1 ,
+                          child: Container(
+                            color: Colors.white,
+                          ),
+                        ),
+                        Expanded(
+                          flex: 3,
+                          child: Container(
+                            color: Colors.green,
+                          ),
+                        ),
+                        Expanded(
+                          flex: 1,
+                          child: Container(
+                            color: Colors.white,
+                          ),
+                        ),
+                      ],
+
+                    ),
+                  ),
+                  Expanded(
+                    child: Row(
+                      children: [
+                        Expanded(
+                          flex: 1,
+                          child: Container(
+                            color: Colors.yellow,
+                          ),
+                        ),
+                        Expanded(
+                          flex: 1,
+                          child: Container(
+                            color: Colors.white,
+                          ),
+                        ),
+                      ],
+
+
+
+                    ),
+                  ),
+                  
+                  Row(
+                    children: [
+                      Expanded(
+                        flex: 1,
+                        child: Container(
+                          color: Colors.red,
+                        ),
+                      ),
+                      Expanded(
+                        flex: 3,
+                        child: Expanded(
+                          child: Column(
+                            children: [
+                              Container(
+                                height: 50,
+                                color: Colors.blue,
+                              ),
+                              Container(
+                                height: 50,
+                                color: Colors.green,
+                              ),
+                            ],
+                          ),
+                        ),
+                      ),
+                      Expanded(
+                        flex: 1,
+                        child: Container(
+                          color: Colors.black,
+                        ),
+                      ),
+                    ],
+                  ),
+                ],
               ),
             ),
             ) ,
           ),
-
     );
 
   }
